@@ -6,8 +6,8 @@ from langchain.schema import SystemMessage, HumanMessage
 import streamlit as st
 
 # 環境変数をロード
-# load_dotenv()
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # LLMの初期化
 llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
